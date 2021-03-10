@@ -10,16 +10,16 @@
 
             }
             function cits() {
-                var c = document.getElementById("demo").value;
-                document.getElementById("runa").value = "Krāsa nomainīta"
+                var c = document.getElementById("teksts");
+                document.getElementById("teksts").value = "Krāsa nomainīta"
             }
         </script>
     </head>
     <body>
         <form>
-            <div id="fons" style="backgro'und-color:lightgrey" <p> id="demo"> Izvēlies krāsu! </div>
+            <div id="fons" style="backgro'und-color:lightgrey" id="teksts"> Izvēlies krāsu! </div>
             <input type="color" id="krasa" value="#00ff00" onchange="krasot();"
-                 id="runa"  onclick="cits()">
+                   onclick="cits()">
         </form>
     </body>
 </html>
