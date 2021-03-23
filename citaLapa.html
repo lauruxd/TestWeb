@@ -7,19 +7,14 @@
             function krasot() {
                 var kr = document.getElementById("krasa").value;
                 document.getElementById("fons").style = "background-color:" + kr;
-
-            }
-            function cits() {
-                var c = document.getElementById("teksts");
-                document.getElementById("teksts").value = "Krāsa nomainīta"
-            }
+                document.getElementById("fons").innerHTML= "Krāsa izvēlēta"
+                }
         </script>
     </head>
     <body>
         <form>
-            <div id="fons" style="backgro'und-color:lightgrey" id="teksts"> Izvēlies krāsu! </div>
-            <input type="color" id="krasa" value="#00ff00" onchange="krasot();"
-                   onclick="cits()">
+            <div id="fons" style="background-color:lightgrey"> Izvēlies krāsu! </div>
+            <input type="color" id="krasa" value="#00ff00" onchange="krasot();">
         </form>
     </body>
 </html>
